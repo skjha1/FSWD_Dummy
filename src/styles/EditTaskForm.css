@@ -1,0 +1,24 @@
+.edit-task-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-task-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .edit-task-form button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .edit-task-form button:hover {
+    background: #0056b3;
+  }
+  

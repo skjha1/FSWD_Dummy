@@ -1,0 +1,26 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task-item.complete span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .task-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .task-item button:hover {
+    background: #ff4c4c;
+  }
+  
