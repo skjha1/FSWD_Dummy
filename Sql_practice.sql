@@ -151,6 +151,36 @@ from employees
 Inner join departments on employees.department = departments.department_name;
 
 
+delete from employees where age > 50;
+SET SESSION sql_safe_= 0;
+SET SESSION sql_safe_deletes = 0;
+
+UPDATE employees
+SET salary = salary * 1.10
+WHERE age <= 30
+LIMIT 10;
+
+DELETE FROM employees
+WHERE age >= 50;
+
+SET GLOBAL sql_safe_updates = 0;
+SET GLOBAL sql_safe_deletes = 0;
+
+
+SELECT VERSION();
+SHOW VARIABLES LIKE '%safe%';
+
+SET SESSION sql_safe_updates = 0;
+DELETE FROM employees;
+
+Select * from employees;
+
+drop table salaries;
+
+
+
+
+
 
 
 
